@@ -2,13 +2,13 @@
 /* tslint: disable */
 /* eslint disabled */
 
-Export type UpdateOrganizationStatusReqDto = {
-    /**
-     * Organization ID
-     */
-    rootNodeId: string;
-    /**
-     * state
-     */
-    state? : string;
+export type UpdateOrganizationStatusReqDto = {
+  /**
+   * Organization ID
+   */
+  rootNodeId: string;
+  /**
+   * state
+   */
+  state?: string;
 };

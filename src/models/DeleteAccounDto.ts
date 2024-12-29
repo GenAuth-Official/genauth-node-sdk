@@ -2,9 +2,9 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type DeleteAccountDto = {
-    /**
-     * Cancel the token of the account
-     */
-    deleteAccountToken: string;
+export type DeleteAccounDto = {
+  /**
+   * Cancel the token of the account
+   */
+  deleteAccountToken: string;
 };

@@ -5,15 +5,15 @@ import type { SignInByPasswordPayloadDto } from "./SignInByPasswordPayloadDto";
 import type { SignInOptionsDto } from "./SignInOptionsDto";
 export type SigninByCredentialsDto = {
   /** *Authentication method: * - `PASSWORD`: Authentication using password.
-* - `PASSCODE`: Authentication using a one-time temporary verification code.
-* - `LDAP`: Authentication based on LDAP user directory.
-* - `AD`: Authentication based on Windows AD user directory.
-*
-* /
-connection: SigninByCredentialsDto.connection;
-/**
-* This parameter is required when the authentication method is `PASSWORD`.
-*/
+   * - `PASSCODE`: Authentication using a one-time temporary verification code.
+   * - `LDAP`: Authentication based on LDAP user directory.
+   * - `AD`: Authentication based on Windows AD user directory.
+   *
+   * */
+  connection: SigninByCredentialsDto.connection;
+  /**
+   * This parameter is required when the authentication method is `PASSWORD`.
+   */
   passwordPayload?: SignInByPasswordPayloadDto;
   /**
    * This parameter is required when the authentication method is `PASSCODE`*/
